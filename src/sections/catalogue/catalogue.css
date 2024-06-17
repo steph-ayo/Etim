@@ -1,0 +1,143 @@
+/* STYLING OF CATALOGUE SECTION */
+
+h2 {
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: var(--color-primary-two);
+}
+h1 {
+  font-family: Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+.catalogue-container {
+  margin-inline: auto;
+  max-width: 1920px;
+}
+
+/* STYLING OF PRODUCTS CATEGORIES */
+.products-categories {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  /* gap: 24px; */
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn.cat__btn {
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+
+.btn.cat__btn:hover {
+  transform: translateY(0);
+}
+
+/* STYLING OF CATALOGUE PRODUCTS */
+.catalogue-products {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  align-items: start;
+  border: 1px solid blue;
+}
+
+/* STYLING OF CATALOGUE PRODUCT */
+
+.card.catalogue-product {
+  animation: animateProject 800ms ease-in forwards;
+}
+
+@keyframes animateProject {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.catalogue-product-image {
+  width: 100%;
+  height: fit-content;
+  min-height: 7rem;
+  max-height: 15rem;
+  background: var(--color-primary-card);
+  border-radius: var(--border-radius-3);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+.catalogue-product-textarea {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+}
+
+.catalogue-product-text {
+}
+
+.catalogue-product-text > h3 {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--color-black);
+}
+.catalogue-product-text > p {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4b5563;
+}
+
+.catalogue-product-colors {
+}
+.catalogue-product-colors > p {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4b5563;
+}
+/* STYLING OF CATALOGUE BUTTON */
+.catalogue-button {
+  margin-top: 2rem;
+  align-items: center;
+}
+
+/* MEDIA QUERIES (for tablets) */
+@media screen and (max-width: 1024px) {
+  .catalogue-products {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* MEDIA QUERIES (for phones) */
+@media screen and (max-width: 600px) {
+  .products-categories {
+    gap: 0.6rem;
+  }
+
+  .btn.cat__btn {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .catalogue-products {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}

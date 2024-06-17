@@ -1,0 +1,10 @@
+#button {
+  font-family: Helvetica;
+  font-size: 16.24px;
+  font-weight: 700;
+  line-height: 32.47px;
+  border-radius: 0.5rem;
+  padding: 8.12px 24.36px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

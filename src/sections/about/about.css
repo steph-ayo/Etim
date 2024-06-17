@@ -1,0 +1,31 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 10%;
+  align-items: center;
+}
+
+.about__item {
+  border: 2px solid red;
+  text-align: center;
+}
+
+.about-item-title,
+.about-item-description {
+  color: var(--color-black);
+}
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+  .about__left {
+    display: none;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+}
