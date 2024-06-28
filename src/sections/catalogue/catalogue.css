@@ -168,6 +168,15 @@ h1 {
 
 /* MEDIA QUERIES (for phones) */
 @media screen and (max-width: 375px) {
+  #Catalogue > h2 {
+    font-size: 20px;
+  }
+  #Catalogue > h1 {
+    font-size: 30px;
+  }
+  .btn.cat__btn {
+    font-size: 15px;
+  }
   .catalogue-products {
     justify-content: center;
     gap: 1rem;

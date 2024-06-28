@@ -59,6 +59,7 @@
   line-height: 32px;
   letter-spacing: -0.01em;
   text-align: left;
+  color: var(--color-white);
 }
 
 .card-text > p {
@@ -147,5 +148,53 @@
   }
   .card-images {
     display: none;
+  }
+}
+
+/* MEDIA QUERIES (phone) */
+@media screen and (max-width: 375px) {
+  #services {
+    padding: 1rem 1.5rem;
+  }
+
+  #services > h2 {
+    font-size: 20px;
+  }
+
+  #services > h1 {
+    font-size: 30px;
+  }
+  #services > p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  .card.service {
+    gap: 1.2rem;
+  }
+  .card-text {
+    width: 100%;
+    height: var(--height-mobile);
+    padding: 2rem 1rem;
+    border-radius: var(--border-radius-1);
+  }
+  .card-text > h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+  }
+
+  .card-text > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .card-text > button {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 0.5rem;
   }
 }
