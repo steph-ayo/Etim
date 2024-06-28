@@ -19,10 +19,10 @@ const Header = () => {
         {/* <div className="header__profile" data-aos="fade-in">
           <img src={HeaderImage} alt="Header Portait" />
         </div> */}
-        <h1 data-aos="fade-up"></h1>
+        <h1 data-aos="fade-up">ETIM VOCAL</h1>
         <p data-aos="fade-up">
-          {/* Welcome to your one-stop destination for all your music needs, where
-          we seamlessly connect you to the world of melodies and rhythms. */}
+          Welcome to your one-stop destination for all your music needs, where
+          we seamlessly connect you to the world of melodies and rhythms.
         </p>
 
         <div className="header__cta" data-aos="fade-up">

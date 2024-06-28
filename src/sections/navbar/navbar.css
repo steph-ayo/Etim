@@ -9,7 +9,6 @@ nav {
   left: 0;
   z-index: 9;
   transition: var(--transition);
-  border: 1px solid red;
 }
 
 .nav__container {
@@ -47,5 +46,8 @@ nav {
 @media screen and (max-width: 1024px) {
   .nav__menu {
     display: none;
+  }
+  .nav__logo {
+    width: 25%;
   }
 }

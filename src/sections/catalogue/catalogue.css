@@ -1,4 +1,7 @@
 /* STYLING OF CATALOGUE SECTION */
+#Catalogue {
+  padding: 3rem 5rem;
+}
 
 h2 {
   font-family: Helvetica;
@@ -30,12 +33,15 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  /* gap: 24px; */
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
 
 .btn.cat__btn {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  color: #4b5563;
   text-transform: capitalize;
   transition: var(--transition);
 }
@@ -51,7 +57,6 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   align-items: start;
-  border: 1px solid blue;
 }
 
 /* STYLING OF CATALOGUE PRODUCT */
@@ -115,11 +120,20 @@ h1 {
 /* STYLING OF CATALOGUE BUTTON */
 .catalogue-button {
   margin-top: 2rem;
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* MEDIA QUERIES (for tablets) */
 @media screen and (max-width: 1024px) {
+  #Catalogue {
+    padding: 0rem 1.5rem;
+  }
+
+  .products-categories {
+    gap: 0.2rem;
+  }
+
   .catalogue-products {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
@@ -128,11 +142,21 @@ h1 {
 
 /* MEDIA QUERIES (for phones) */
 @media screen and (max-width: 600px) {
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 38px;
+    font-weight: 500;
+  }
+
   .products-categories {
     gap: 0.6rem;
   }
 
   .btn.cat__btn {
+    transition: var(--transition);
     padding: 0.7rem 0.8rem;
   }
 

@@ -8,6 +8,13 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 :root {
   --primary-hue: 270;
   --black-lightness: 15%;
@@ -27,6 +34,7 @@
   --container-width-md: 90%;
 
   /* BORDER RADIUS VARIABLES */
+  --border-radius-0: 3.5rem;
   --border-radius-1: 1.2rem;
   --border-radius-2: 0.8rem;
   --border-radius-3: 0.5rem;
@@ -40,9 +48,10 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Helvetica", sans-serif;
   line-height: 1.6;
   font-size: 0.9rem;
+  height: 100%;
 }
 
 /* GENERAL CONTAINER CLASS */
