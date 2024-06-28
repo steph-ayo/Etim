@@ -1,0 +1,89 @@
+#whatsnew {
+  background-color: var(--color-primary-card);
+  padding: 3rem 5rem;
+  margin-top: 1.5rem;
+}
+
+.whatsnew-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.whatsnew-container .image {
+  width: 50%;
+}
+
+.whatsnew-container .text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-self: center;
+}
+
+.whatsnew-container .text > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: -0.01em;
+}
+
+.whatsnew-container .text > p {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.whatsnew-container .text > p > span {
+  color: var(--color-primary);
+}
+
+.whatsnew-container .text > Button {
+  margin-top: 1rem;
+  width: 80%;
+  font-family: "Helvetica";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+  .whatsnew-container .text > h1 {
+    font-size: 38px;
+  }
+  .whatsnew-container .text > p {
+    font-size: 18px;
+  }
+}
+
+/* MEDIA QUERIES (Mobile) */
+@media screen and (max-width: 600px) {
+  #whatsnew {
+    padding: 3rem 3rem;
+  }
+  .whatsnew-container {
+    flex-direction: column;
+  }
+  .whatsnew-container .image {
+    width: 100%;
+  }
+
+  .whatsnew-container .text {
+    width: 100%;
+  }
+  .whatsnew-container .text > h1 {
+    font-size: 28px;
+  }
+  .whatsnew-container .text > p {
+    font-size: 16px;
+  }
+  .whatsnew-container .text > Button {
+    font-size: 15px;
+  }
+}
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 375px) {
+}

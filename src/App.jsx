@@ -5,7 +5,7 @@ import Services from "./sections/services/Services";
 import Catalogue from "./sections/catalogue/Catalogue";
 // import Workshop from "./sections/workshop/Workshop";
 // import Testimonials from "./sections/testimonials/Testimonials";
-// import Whatsnew from "./sections/whatsnew/Whatsnew";
+import Whatsnew from "./sections/whatsnew/Whatsnew";
 // import Contact from "./sections/contact/Contact";
 // import Footer from "./sections/footer/Footer";
 
@@ -18,9 +18,9 @@ function App() {
       <Services />
       <Catalogue />
       {/* <Workshop />
-      <Testimonials />
+      <Testimonials /> */}
       <Whatsnew />
-      <Contact />
+      {/* <Contact />
       <Footer /> */}
     </div>
   );

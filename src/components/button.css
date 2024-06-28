@@ -1,5 +1,5 @@
 #button {
-  font-family: Helvetica;
+  font-family: "Helvetica";
   font-size: 16.24px;
   font-weight: 700;
   line-height: 32.47px;
@@ -7,4 +7,12 @@
   padding: 8.12px 24.36px;
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+/* MEDIA QUERIES (Mobile) */
+@media screen and (max-width: 600px) {
+  #button {
+    font-family: Helvetica;
+    font-size: 15px;
+  }
 }
