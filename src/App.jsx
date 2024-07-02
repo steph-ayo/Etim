@@ -6,8 +6,8 @@ import Catalogue from "./sections/catalogue/Catalogue";
 // import Workshop from "./sections/workshop/Workshop";
 // import Testimonials from "./sections/testimonials/Testimonials";
 import Whatsnew from "./sections/whatsnew/Whatsnew";
-// import Contact from "./sections/contact/Contact";
-// import Footer from "./sections/footer/Footer";
+import Contact from "./sections/contact/Contact";
+import Footer from "./sections/footer/Footer";
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
       {/* <Workshop />
       <Testimonials /> */}
       <Whatsnew />
-      {/* <Contact />
-      <Footer /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }

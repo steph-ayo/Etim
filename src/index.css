@@ -26,6 +26,7 @@ body {
   --color-primary-two: #0eb2a4;
   --color-primary-card: #edf9fc;
   --color-white: hsl(0, 5%, var(--white-lightness));
+  --color-white-light: rgba(255, 255, 255, 0.5);
   --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
   --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
   --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
