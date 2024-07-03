@@ -3,7 +3,7 @@ import Header from "./sections/header/Header";
 import Navbar from "./sections/navbar/Navbar";
 import Services from "./sections/services/Services";
 import Catalogue from "./sections/catalogue/Catalogue";
-// import Workshop from "./sections/workshop/Workshop";
+import Workshop from "./sections/workshop/Workshop";
 // import Testimonials from "./sections/testimonials/Testimonials";
 import Whatsnew from "./sections/whatsnew/Whatsnew";
 import Contact from "./sections/contact/Contact";
@@ -17,8 +17,8 @@ function App() {
       <About />
       <Services />
       <Catalogue />
-      {/* <Workshop />
-      <Testimonials /> */}
+      <Workshop />
+      <Testimonials />
       <Whatsnew />
       <Contact />
       <Footer />

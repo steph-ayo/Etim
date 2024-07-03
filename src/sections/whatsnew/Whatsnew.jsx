@@ -1,6 +1,7 @@
 import BookImage from "../../assets/images/Book Image.png";
 import Button from "../../components/Button";
 import "./whatsnew.css";
+import "aos/dist/aos.css";
 
 const Whatsnew = () => {
   const handleClick = () => {
@@ -10,10 +11,10 @@ const Whatsnew = () => {
   return (
     <section id="whatsnew">
       <div className="whatsnew-container">
-        <div className="image">
+        <div className="image" data-aos="fade-right">
           <img src={BookImage} alt="" />
         </div>
-        <div className="text">
+        <div className="text" data-aos="fade-left">
           <h1>Whats New</h1>
           <p>
             Unlock the full potential of your singing voice. This is the

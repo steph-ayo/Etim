@@ -12,7 +12,7 @@ footer {
 /* STYLING OF FOOTER TOP */
 .footer-top {
   color: var(--color-white);
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 /* STYLING OF FOOTER MAIN */
@@ -63,14 +63,15 @@ footer {
   gap: 4rem;
 }
 
-.ourServices > h4,
-.concerts > h4,
-.explore-categories > h4,
-.workshops > h4 {
+.ourServices > h4 > a,
+.concerts > h4 > a,
+.explore-categories > h4 > a,
+.workshops > h4 > a {
   /* font-family: "Open Sans"; */
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
+  color: var(---color-white);
 }
 
 .ourServices > p,

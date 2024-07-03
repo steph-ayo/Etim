@@ -7,6 +7,10 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+.app {
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
 
 html,
 body {

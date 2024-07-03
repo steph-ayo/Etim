@@ -4,11 +4,12 @@ import Imagelogo from "../../assets/images/logo.svg";
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import "./footer.css";
+import "aos/dist/aos.css";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-container">
+      <div className="footer-container" data-aos="fade-up">
         {/* FOOTER TOP */}
         <div className="footer-top">
           {/* {data.map((item) => (
@@ -39,7 +40,9 @@ const Footer = () => {
           <div id="footer-main-text">
             {/* FOOTER MAIN----SERVICES */}
             <div className="ourServices">
-              <h4>Our Services</h4>
+              <h4>
+                <a href="#ourservices">Our Services</a>
+              </h4>
               <p>Sales/Rentals</p>
               <p>Trainings & Workshop</p>
               <p>Concerts</p>
@@ -47,7 +50,9 @@ const Footer = () => {
 
             {/* FOOTER MAIN----CONCERTS */}
             <div className="concerts">
-              <h4>Concerts</h4>
+              <h4>
+                <a href="#ourservices">Concerts</a>
+              </h4>
               <p>Bands</p>
               <p>Essemble</p>
               <p>Eva chorale</p>
@@ -56,7 +61,9 @@ const Footer = () => {
 
             {/* FOOTER MAIN----EXPLORE CATEGORIES*/}
             <div className="explore-categories">
-              <h4>Explore-categories</h4>
+              <h4>
+                <a href="#ourproducts">Explore-categories</a>
+              </h4>
               <p>Stringed Instruments</p>
               <p>Brass Instruments</p>
               <p>Woodwind Instruments</p>
@@ -65,7 +72,9 @@ const Footer = () => {
 
             {/* FOOTER MAIN----WORKSHOPS */}
             <div className="workshops">
-              <h4>Workshops</h4>
+              <h4>
+                <a href="#workshop">Workshops</a>
+              </h4>
               <p>Instruments Trainings</p>
               <p>Vocal Training</p>
               <p>Choral Training</p>
