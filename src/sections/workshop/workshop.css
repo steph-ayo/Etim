@@ -4,7 +4,7 @@
 }
 
 .workshop-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
 }
@@ -58,7 +58,7 @@
 
 .workshop-container .video {
   width: 50%;
-  border: 10px solid var(--color-primary);
+  border: 15px solid var(--color-primary);
 }
 
 /* MEDIA QUERIES (tablets) */
@@ -78,9 +78,15 @@
   .workshop-container .text > h1 {
     font-size: 38px;
   }
+  .workshop-container .text > ol > li {
+    font-size: 16px;
+    padding: 0.2rem;
+  }
 
   .workshop-container .video {
     width: 100%;
+    border: 15px solid var(--color-primary);
+    border-radius: 0 0 1rem 1rem;
   }
 }
 
@@ -102,9 +108,7 @@
     flex-direction: column;
     gap: 0.7rem;
   }
-  .workshop-container .text > ol > li {
-    font-size: 18px;
-  }
+
   .workshop-container .text > button {
     font-size: 15px;
     width: 100%;

@@ -7,18 +7,25 @@ import "./footer.css";
 import "aos/dist/aos.css";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer>
       <div className="footer-container" data-aos="fade-up">
         {/* FOOTER TOP */}
-        <div className="footer-top">
-          {/* {data.map((item) => (
+        {/* <div className="footer-top">
+          {data.map((item) => (
             <div key={item.id}>
               <img src={item.icon} alt="" />
               <p>{item.name}</p>
             </div>
-          ))} */}
-        </div>
+          ))}
+        </div> */}
 
         {/* FOOTER MAIN */}
         <div className="footer-main">
@@ -82,17 +89,19 @@ const Footer = () => {
           </div>
 
           {/* FOOTER MAIN----SCROLL-CONTROL */}
-          <div className="scroll-control">
+          <div className="scroll-control" onClick={scrollToTop}>
             <IoMdArrowRoundUp id="scroll-icon" />
           </div>
         </div>
         {/* FOOTER BOTTOM */}
         <div className="footer-bottom">
-          <div>
+          <div className="footer-bottom-text">
             <p>Terms of Use</p>
             <p>Privacy Policy</p>
           </div>
-          <p>Etim Vocal Enterprises (c) 2024. All Rights Reserved.</p>
+          <p className="footer-bottom-text">
+            Etim Vocal Enterprises (c) 2024. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

@@ -10,17 +10,17 @@ footer {
 }
 
 /* STYLING OF FOOTER TOP */
-.footer-top {
+/* .footer-top {
   color: var(--color-white);
   border: 1px solid red;
-}
+} */
 
 /* STYLING OF FOOTER MAIN */
 .footer-main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 3rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
 
 .footer-main .logo,
@@ -133,10 +133,10 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
-  .ourServices > h4,
-  .concerts > h4,
-  .explore-categories > h4,
-  .workshops > h4 {
+  .ourServices > h4 > a,
+  .concerts > h4 > a,
+  .explore-categories > h4 > a,
+  .workshops > h4 > a {
     /* font-family: "Open Sans"; */
     font-size: 18px;
   }
@@ -155,13 +155,16 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 3rem;
+    padding: 2rem 2rem 0.5rem 2rem;
   }
   .footer-main .logo {
     margin-left: 0rem;
     margin-bottom: 2rem;
   }
 
+  #footer-main-text {
+    gap: 0.5rem;
+  }
   .footer-main .logo,
   .footer-main .ourServices,
   .footer-main .concerts,
@@ -179,10 +182,10 @@ footer {
     justify-content: center;
   }
 
-  .ourServices > h4,
-  .concerts > h4,
-  .explore-categories > h4,
-  .workshops > h4 {
+  .ourServices > h4 > a,
+  .concerts > h4 > a,
+  .explore-categories > h4 > a,
+  .workshops > h4 > a {
     font-size: 16px;
   }
 
@@ -201,5 +204,21 @@ footer {
 
   .footer-bottom > div {
     margin: auto;
+  }
+  .footer-bottom-text {
+    font-size: 14px;
+  }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 375px) {
+  .ourServices > h4,
+  .concerts > h4,
+  .explore-categories > h4,
+  .workshops > h4 {
+    font-size: 14px;
+  }
+  .footer-bottom-text {
+    font-size: 12px;
   }
 }

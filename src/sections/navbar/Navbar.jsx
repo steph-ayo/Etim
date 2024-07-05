@@ -9,11 +9,11 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="container nav__container">
-        <a href="index.html" className="nav__logo">
+      <div className="container nav-container">
+        <a href="index.html" className="nav-logo">
           <img src={logo} alt="logo"></img>
         </a>
-        <ul className="nav__menu">
+        <ul className="nav-menu">
           {data.map((item) => (
             <li key={item.id}>
               <a href={item.link}>{item.title}</a>

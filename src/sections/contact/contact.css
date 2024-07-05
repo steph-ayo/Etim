@@ -34,25 +34,35 @@
 }
 
 .telephone {
-  font-family: "Open Sans";
-  font-size: 20px;
   color: var(--color-primary);
 }
 
 .telephone > a {
   margin-left: 0.5rem;
   color: var(--color-black);
+  font-family: "Open Sans";
+  font-size: 20px;
+}
+.whatsapp {
+  color: var(--color-primary);
+}
+
+.whatsapp > a {
+  margin-left: 0.5rem;
+  color: var(--color-black);
+  font-family: "Open Sans";
+  font-size: 20px;
 }
 
 .e-mail {
-  font-family: "Open Sans";
-  font-size: 20px;
   color: var(--color-primary);
 }
 
 .e-mail > a {
   margin-left: 0.5rem;
   color: var(--color-black);
+  font-family: "Open Sans";
+  font-size: 20px;
 }
 
 .contact-form {
@@ -132,12 +142,18 @@ form > button {
     font-size: 15px;
     font-weight: 700;
   }
+  .telephone > a,
+  .whatsapp > a,
+  .e-mail > a {
+    font-size: 18px;
+  }
 }
 
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 375px) {
-  .telephone,
-  .e-mail {
-    font-size: 18px;
+  .telephone > a,
+  .whatsapp > a,
+  .e-mail > a {
+    font-size: 16px;
   }
 }

@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+// import emailjs from "emailjs-com";
 import "./contact.css";
-import Button from "../../components/Button";
+// import Button from "../../components/Button";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,6 +27,23 @@ const Contact = () => {
     console.log("Form Data Submitted:", formData);
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData, "YOUR_USER_ID")
+  //     .then(
+  //       (response) => {
+  //         console.log("SUCCESS!", response.status, response.text);
+  //         alert("Your message has been sent!");
+  //       },
+  //       (err) => {
+  //         console.log("FAILED...", err);
+  //         alert("There was an error sending your message.");
+  //       }
+  //     );
+  // };
+
   return (
     <section id="contact">
       <div className="contact-container">
@@ -33,7 +52,11 @@ const Contact = () => {
           <h1>Contact Us</h1>
           <div className="telephone">
             <BsFillTelephoneFill />
-            <a href="tel:08169878207">08169878207</a>
+            <a href="tel:08169878207"> +2348024033363</a>
+          </div>
+          <div className="whatsapp">
+            <IoLogoWhatsapp />
+            <a href="tel:08169878207"> +2348188207410</a>
           </div>
           <div className="e-mail">
             <MdEmail />

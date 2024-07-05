@@ -9,9 +9,9 @@ const Workshop = () => {
         <div className="text">
           <h1>Music Workshop</h1>
           <ol>
-            <li>Instruments Training</li>
-            <li>Vocal Training</li>
-            <li>Choral Training</li>
+            <li data-aos="zoom-in-right">Instruments Training</li>
+            <li data-aos="zoom-in-left">Vocal Training</li>
+            <li data-aos="zoom-in-right">Choral Training</li>
           </ol>
 
           <button>REGISTER NOW</button>

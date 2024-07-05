@@ -44,7 +44,7 @@ header > * {
 }
 
 .header__container h1 {
-  font-family: Helvetica;
+  font-family: var(--helvetica-font);
   font-size: 73.07px;
   font-weight: 700;
   line-height: 87.27px;
@@ -54,6 +54,7 @@ header > * {
 }
 
 .header__container p {
+  font-family: var(--open-sans-font);
   font-size: 20.3px;
   font-weight: 600;
   line-height: 28.41px;

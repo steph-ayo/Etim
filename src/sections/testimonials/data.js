@@ -1,30 +1,55 @@
-import Avatar1 from "../../assets/testimonials/avatar1.jpg";
-import Avatar2 from "../../assets/testimonials/avatar2.jpg";
-import Avatar3 from "../../assets/testimonials/avatar3.jpg";
+import Babara from "../../assets/testimonials/Babara.png";
+import Mfm from "../../assets/testimonials/mfm.png";
+import Daramola from "../../assets/testimonials/Daramola.png";
 
 const data = [
   {
     id: 1,
     quote:
-      "It's truly amazing how you did exactly what I want with the little information I gave. You'll be my go-to developer from today. Highly recommend!",
-    avatar: Avatar1,
-    name: "Nana Ama McBrown",
-    profession: "Actress",
+      '"The instructors at Evans vocals are knowledgeable and patient... I gained invaluable skills in both music theory and practical application, which have significantly improved my playing and composition abilities."',
+    avatar: Babara,
+    name: "Babaraoluwa",
+    profession: "Student class of 2023",
   },
   {
     id: 2,
     quote:
-      "Good job, Hajia! Right on time! I really like how the project turned out, and my customers like it as well. It was fun collaborating with you.",
-    avatar: Avatar2,
-    name: "Ernest Achiever",
-    profession: "Web Developer",
+      "“I highly recommend Etim Vocals Enterprises! From the moment we engaged their services, it was clear we were in the hands of true professionals. Their team’s expertise and passion for music production shone through in every interaction.”",
+    avatar: Mfm,
+    name: "Mountain of Life ministries",
+    profession: "Youth church",
   },
   {
     id: 3,
-    quote: "Impressive work, buddy. Highly recommend!",
-    avatar: Avatar3,
-    name: "Daniel Vinyo",
-    profession: "Graphic Designer",
+    quote:
+      "“I highly recommend Etim Vocals Enterprises! From the moment we engaged their services, it was clear we were in the hands of true professionals. Their team’s expertise and passion for music production shone through in every interaction.”",
+    avatar: Daramola,
+    name: "Daramola",
+    profession: "Customer",
+  },
+  {
+    id: 4,
+    quote:
+      "“I highly recommend Etim Vocals Enterprises! From the moment we engaged their services, it was clear we were in the hands of true professionals. Their team’s expertise and passion for music production shone through in every interaction.”",
+    avatar: Daramola,
+    name: "Daramola",
+    profession: "Customer",
+  },
+  {
+    id: 5,
+    quote:
+      "“I highly recommend Etim Vocals Enterprises! From the moment we engaged their services, it was clear we were in the hands of true professionals. Their team’s expertise and passion for music production shone through in every interaction.”",
+    avatar: Daramola,
+    name: "Daramola",
+    profession: "Customer",
+  },
+  {
+    id: 6,
+    quote:
+      "“I highly recommend Etim Vocals Enterprises! From the moment we engaged their services, it was clear we were in the hands of true professionals. Their team’s expertise and passion for music production shone through in every interaction.”",
+    avatar: Daramola,
+    name: "Daramola",
+    profession: "Customer",
   },
 ];
 
