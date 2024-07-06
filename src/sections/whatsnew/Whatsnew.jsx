@@ -14,8 +14,8 @@ const Whatsnew = () => {
         <div className="image" data-aos="fade-right">
           <img src={BookImage} alt="" />
         </div>
-        <div className="text" data-aos="fade-left">
-          <h1>Whats New</h1>
+        <div className="whatsnew-text" data-aos="fade-left">
+          <h1>What's New</h1>
           <p>
             Unlock the full potential of your singing voice. This is the
             ultimate guide for vocalists of all levels. Get your copy of{" "}

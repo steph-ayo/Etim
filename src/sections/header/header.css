@@ -64,8 +64,17 @@ header > * {
   color: var(--color-white);
 }
 
-.header__cta {
+.header-cta > Button {
   align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.header-cta > button:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 
 /* MEDIA QUERIES (tablets) */

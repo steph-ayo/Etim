@@ -4,6 +4,7 @@ import ProductsCategories from "./ProductsCategories";
 import data from "./data";
 import { useState } from "react";
 import Button from "../../components/Button";
+import { FaCartShopping } from "react-icons/fa6";
 
 const Catalogue = () => {
   const [products, setProducts] = useState(data);
@@ -24,7 +25,10 @@ const Catalogue = () => {
 
   // Function for Shop button
   const handleClick = () => {
-    console.log("Button was clicked!");
+    const message = encodeURIComponent(
+      "Hello Etim Vocal Enterprises, I want to buy..."
+    );
+    window.location.href = `https://wa.me/+2348188207410?text=${message}`;
   };
 
   return (
@@ -40,7 +44,9 @@ const Catalogue = () => {
         <Products products={products} />
       </div>
       <div className="catalogue-button">
-        <Button onClick={handleClick}>SHOP</Button>
+        <Button onClick={handleClick}>
+          SHOP <FaCartShopping />
+        </Button>
       </div>
     </section>
   );

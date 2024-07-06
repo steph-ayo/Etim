@@ -1,7 +1,13 @@
 import ViolinImage from "../../assets/images/products/violin.png";
-import GuitarImage from "../../assets/images/products/guitar.png";
+import GuitarImage from "../../assets/images/products/guitars.png";
 import SaxophoneImage from "../../assets/images/products/saxophone.png";
 import PianoImage from "../../assets/images/products/piano.png";
+import Clarinet from "../../assets/images/products/clarinet.png";
+import Flute from "../../assets/images/products/flute.png";
+import Trumpet from "../../assets/images/products/trumpet.png";
+import Keyboard from "../../assets/images/products/keyboard.png";
+import Organ from "../../assets/images/products/organ.png";
+import Cello from "../../assets/images/products/cello.png";
 
 const data = [
   {
@@ -19,13 +25,13 @@ const data = [
   {
     id: 3,
     category: "Stringed Instuments",
-    image: ViolinImage,
+    image: Cello,
     title: "Cello",
   },
   {
     id: 4,
     category: "Brass & Woodwind Instuments",
-    image: ViolinImage,
+    image: Trumpet,
     title: "Trumpet",
   },
   {
@@ -37,19 +43,19 @@ const data = [
   {
     id: 6,
     category: "Brass & Woodwind Instuments",
-    image: ViolinImage,
+    image: Clarinet,
     title: "Clarinet",
   },
   {
     id: 7,
     category: "Brass & Woodwind Instuments",
-    image: ViolinImage,
+    image: Flute,
     title: "Flute",
   },
   {
     id: 8,
     category: "Others",
-    image: ViolinImage,
+    image: Keyboard,
     title: "Keyboards",
   },
   {
@@ -61,7 +67,7 @@ const data = [
   {
     id: 10,
     category: "Others",
-    image: ViolinImage,
+    image: Organ,
     title: "Organs",
     description: "Installation Available",
   },

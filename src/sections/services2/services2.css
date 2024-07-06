@@ -1,66 +1,23 @@
-#services {
-  padding: 0rem 5rem;
-}
-
-#services-container {
-  margin: 2.7rem 0;
+.services2 {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  height: 62.4vh;
 }
 
-#services > h2 {
-  font-family: var(--helvetica-font);
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  color: #0eb2a4;
-}
-
-#services > h1 {
-  font-family: var(--helvetica-font);
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 58px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  color: #001419;
-}
-
-#services > p {
-  font-family: var(--open-sans-font);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left;
-  color: #4b5563;
-}
-
-.services1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  width: 100%;
-}
-
-/* .card.service {
+.card.service {
   display: flex;
   align-items: flex-start;
-} */
+}
 
-.card-text {
-  width: 60%;
-  height: var(--height);
+.text {
+  width: 40%;
+  height: 62.4vh;
   color: var(--color-white);
-  padding: 3.5rem 1rem;
+  padding: 5rem 1rem;
   border-radius: var(--border-radius-1) 0 0 var(--border-radius-1);
   background-color: var(--color-primary);
 }
 
-.card-text > h2 {
+.text > h2 {
   font-family: var(--helvetica-font);
   font-size: 22px;
   font-weight: 600;
@@ -70,14 +27,14 @@
   color: var(--color-white);
 }
 
-.card-text > p {
+.text > p {
   font-family: var(--open-sans-font);
   font-size: 16px;
   font-weight: 200;
   line-height: 28px;
 }
 
-.card-text > button {
+.text > button {
   font-size: 16px;
   font-weight: 700;
   line-height: 32px;
@@ -89,42 +46,75 @@
   border-bottom: 1px solid var(--color-white);
 }
 
-.card-text > button:hover {
+.text > button:hover {
   transform: translateY(-5px);
   transition: transform 0.8s ease;
 }
 
-.card-text > button > a {
+.text > button > a {
   color: var(--color-white);
 }
 
-.card-images {
-  width: 40%;
+.images {
+  width: 60%;
+  height: 50vh;
   border-radius: 0 var(--border-radius-1) var(--border-radius-1) -3.5rem;
 }
 
-.card-image {
-  width: 100%;
+.mySwiper {
+  height: 50vh;
+  border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0;
 }
 
-#main-image {
+.musicService-card-bands,
+.musicService-card-ensemble .musicService-card-evachorale,
+.musicService-card-solo {
   width: 100%;
-  height: var(--height);
-  object-fit: cover;
-  border-radius: 0 1.2rem 1.2rem 0;
+  background-size: cover; /* This makes the background image cover the entire div */
+  background-position: center; /* This centers the background image */
+  background-repeat: no-repeat; /* This prevents the background image from repeating */
 }
 
-/* transition: var(--transition); */
+.musicService-card-bands {
+  background-image: url("../../assets/images/concerts/Concerts-bands.jpg");
+}
+.musicService-card-ensemble {
+  background-image: url("../../assets/images/concerts/Concerts-essemble.jpg");
+}
+.musicService-card-evachorale {
+  background-image: url("../../assets/images/concerts/evachorale.png");
+}
+.musicService-card-solo {
+  background-image: url("../../assets/images/concerts/Solo.jpeg");
+}
+.musicService-card-text {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 50%;
+  color: var(--color-white);
+  font-family: var(----helvetica-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.eclipse {
+  width: 3%;
+  border-radius: 50%;
+  background-color: #0eb2a4;
+  margin: 0.3rem 0;
+}
 
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
   #services {
     padding: 4rem 1.5rem;
   }
-  #services-container {
-    gap: 1.5rem;
-  }
-  .services1 {
+  .services__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
@@ -153,39 +143,16 @@
     line-height: 24px;
   }
 
-  #services-container {
-    gap: 1.2rem;
+  .services2 {
+    width: 100%;
   }
 
-  .services1 {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-  .card.service {
-    gap: 1.2rem;
-  }
-  .card-text {
+  .text {
     width: 100%;
-    padding: 2rem 1rem;
-    height: var(--height);
+    height: var(--height-mobile);
     border-radius: var(--border-radius-1);
   }
-  .card-text > h2 {
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .card-text > p {
-    font-size: 16px;
-    font-weight: 200;
-  }
-
-  .card-text > button {
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  .card-images {
+  .images {
     display: none;
   }
 }
@@ -204,23 +171,22 @@
     font-size: 30px;
   }
   #services > p {
-    font-size: 30px;
-    font-weight: 200;
-    line-height: 18px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
   }
 
-  #services-container {
+  .card.service {
     gap: 1.2rem;
   }
-
   .card-text {
     width: 100%;
-    height: var(--height);
-    background-color: var(--color-primary);
-    padding: 10rem 1rem;
+    height: var(--height-mobile);
+    padding: 2rem 1rem;
+    border-radius: var(--border-radius-1);
   }
   .card-text > h2 {
-    font-size: px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.01em;

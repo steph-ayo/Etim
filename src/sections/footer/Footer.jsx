@@ -3,6 +3,8 @@ import { IoMdArrowRoundUp } from "react-icons/io";
 import Imagelogo from "../../assets/images/logo.svg";
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { AiFillInstagram } from "react-icons/ai";
 import "./footer.css";
 import "aos/dist/aos.css";
 
@@ -34,12 +36,36 @@ const Footer = () => {
             <img src={Imagelogo} alt="Etim vocal enterprises logo" />
             <div className="logo-contact">
               <div className="logo-contact-mail">
-                {" "}
-                <MdEmail />
+                <a
+                  href="mailto:evenconceptsmedia@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MdEmail />
+                </a>
               </div>
               <div className="logo-contact-telephone">
-                {" "}
-                <BsFillTelephoneFill />
+                <a href="tel:+2348024033363">
+                  <BsFillTelephoneFill />
+                </a>
+              </div>
+              <div className="logo-contact-whatsapp">
+                <a
+                  href="https://wa.me/2348188207410"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IoLogoWhatsapp />
+                </a>
+              </div>
+              <div className="logo-contact-instagram">
+                <a
+                  href="https://www.instagram.com/eva.cademy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillInstagram />
+                </a>
               </div>
             </div>
           </div>
@@ -48,7 +74,7 @@ const Footer = () => {
             {/* FOOTER MAIN----SERVICES */}
             <div className="ourServices">
               <h4>
-                <a href="#ourservices">Our Services</a>
+                <a href="#services">Our Services</a>
               </h4>
               <p>Sales/Rentals</p>
               <p>Trainings & Workshop</p>
@@ -58,7 +84,7 @@ const Footer = () => {
             {/* FOOTER MAIN----CONCERTS */}
             <div className="concerts">
               <h4>
-                <a href="#ourservices">Concerts</a>
+                <a href="#services">Concerts</a>
               </h4>
               <p>Bands</p>
               <p>Essemble</p>
@@ -69,7 +95,7 @@ const Footer = () => {
             {/* FOOTER MAIN----EXPLORE CATEGORIES*/}
             <div className="explore-categories">
               <h4>
-                <a href="#ourproducts">Explore-categories</a>
+                <a href="#Catalogue">Explore-categories</a>
               </h4>
               <p>Stringed Instruments</p>
               <p>Brass Instruments</p>

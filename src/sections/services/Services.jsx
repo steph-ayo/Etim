@@ -1,6 +1,7 @@
 import data from "./data";
 import "./services.css";
 import ServiceCard from "./ServiceCard";
+import Services2 from "../services2/Services2";
 
 const Services = () => {
   return (
@@ -12,26 +13,29 @@ const Services = () => {
         Parties, Church and Religious events.
       </p>
 
-      <div
-        id="services-container"
-        className="container services__container"
-        data-aos="fade-up"
-      >
-        {data.map((item) => (
-          <ServiceCard key={item.id} className="service light">
-            <div className="card-text">
-              <h2>{item.title}</h2>
-              <p>{item.desc}</p>
-              <button>{item.btnText}</button>
-            </div>
-
-            <div className="card-images">
-              <div className="card-image">
-                <img id="main-image" src={item.image} alt="" />
+      <div id="services-container" className="container" data-aos="fade-up">
+        <div className="services1">
+          {data.map((item) => (
+            <ServiceCard key={item.id} className="service light">
+              <div className="card-text">
+                <h2>{item.title}</h2>
+                <p>{item.desc}</p>
+                <button>
+                  <a href={item.btnLink}>{item.btnText}</a>
+                </button>
               </div>
-            </div>
-          </ServiceCard>
-        ))}
+
+              <div className="card-images">
+                <div className="card-image">
+                  <img id="main-image" src={item.image} alt="" />
+                </div>
+              </div>
+            </ServiceCard>
+          ))}
+        </div>
+        <div className="services2">
+          <Services2 />
+        </div>
       </div>
     </section>
   );

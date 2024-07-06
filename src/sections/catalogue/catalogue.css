@@ -4,7 +4,7 @@
 }
 
 h2 {
-  font-family: Helvetica;
+  font-family: var(--helvetica-font);
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -13,7 +13,7 @@ h2 {
   color: var(--color-primary-two);
 }
 h1 {
-  font-family: Helvetica;
+  font-family: var(--helvetica-font);
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
@@ -30,6 +30,7 @@ h1 {
 
 /* STYLING OF PRODUCTS CATEGORIES */
 .products-categories {
+  font-family: var(--helvetica-font);
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -38,7 +39,7 @@ h1 {
 }
 
 .btn.cat__btn {
-  font-family: Helvetica;
+  font-family: var(--helvetica-font);
   font-size: 16px;
   font-weight: 300;
   color: #4b5563;
@@ -83,6 +84,7 @@ h1 {
   border-radius: var(--border-radius-3);
   margin-bottom: 1.5rem;
   overflow: hidden;
+  padding: 2rem;
 }
 .catalogue-product-textarea {
   display: flex;
@@ -91,39 +93,48 @@ h1 {
 }
 
 .catalogue-product-text {
+  /* border: 1px solid red; */
 }
 
 .catalogue-product-text > h3 {
-  font-family: Open Sans;
-  font-size: 20px;
+  font-family: var(--open-sans-font);
+  font-size: 18px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 20px;
   color: var(--color-black);
 }
 .catalogue-product-text > p {
-  font-family: Open Sans;
-  font-size: 16px;
+  font-family: var(--open-sans-font);
+  font-size: 13px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
   color: #4b5563;
 }
 
 .catalogue-product-colors {
+  /* border: 1px solid red; */
 }
 .catalogue-product-colors > p {
-  font-family: Open Sans;
-  font-size: 16px;
+  font-family: var(--open-sans-font);
+  font-size: 15px;
   font-weight: 400;
-  line-height: 24px;
-  color: #4b5563;
+  line-height: 20px;
+  color: rgb(24, 138, 24);
 }
 /* STYLING OF CATALOGUE BUTTON */
 .catalogue-button {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 
+.catalogue-button > Button:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
 /* MEDIA QUERIES (for tablets) */
 @media screen and (max-width: 1024px) {
   #Catalogue {
@@ -164,6 +175,16 @@ h1 {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+  .catalogue-product-image {
+    padding: 1rem;
+  }
+
+  .catalogue-product-text > h3 {
+    font-size: 18px;
+  }
+  .catalogue-product-text > p {
+    font-size: 12px;
+  }
 }
 
 /* MEDIA QUERIES (for phones) */
@@ -180,5 +201,11 @@ h1 {
   .catalogue-products {
     justify-content: center;
     gap: 1rem;
+  }
+  .catalogue-product-text > h3 {
+    font-size: 16px;
+  }
+  .catalogue-product-text > p {
+    font-size: 9px;
   }
 }

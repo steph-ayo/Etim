@@ -3,6 +3,13 @@ import VideoPlayer from "../../components/VideoPlayer";
 import "aos/dist/aos.css";
 
 const Workshop = () => {
+  const handleClick = () => {
+    const message = encodeURIComponent(
+      "Hello Etim Vocal Enterprises, I want to register for..."
+    );
+    window.location.href = `https://wa.me/+2348188207410?text=${message}`;
+  };
+
   return (
     <section id="workshop">
       <div className="workshop-container">
@@ -14,7 +21,7 @@ const Workshop = () => {
             <li data-aos="zoom-in-right">Choral Training</li>
           </ol>
 
-          <button>REGISTER NOW</button>
+          <button onClick={handleClick}>REGISTER NOW</button>
         </div>
 
         <div className="video">

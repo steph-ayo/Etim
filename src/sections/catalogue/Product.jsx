@@ -11,10 +11,10 @@ const Product = ({ product }) => {
           <h3>{product.title}</h3>
           <p>{product.description}</p>
         </div>
-        {/* <div className="catalogue-product-colors">
-          <p>Available in</p>
-          <p>Colors</p>
-        </div> */}
+        <div className="catalogue-product-colors">
+          <p>Available </p>
+          {/* <p>Colors</p> */}
+        </div>
       </div>
     </Card>
   );

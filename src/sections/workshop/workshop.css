@@ -56,6 +56,12 @@
   width: 60%;
 }
 
+.workshop-container .text > button:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
 .workshop-container .video {
   width: 50%;
   border: 15px solid var(--color-primary);

@@ -10,22 +10,20 @@ const Header = () => {
   }, []);
 
   const handleClick = () => {
-    console.log("Button was clicked!");
+    const message = encodeURIComponent("Hello Etim Vocal Enterprises...");
+    window.location.href = `https://wa.me/+2348188207410?text=${message}`;
   };
 
   return (
     <header id="header">
       <div className="container header__container">
-        {/* <div className="header__profile" data-aos="fade-in">
-          <img src={HeaderImage} alt="Header Portait" />
-        </div> */}
         <h1 data-aos="fade-up">ETIM VOCALS</h1>
         <p data-aos="fade-up">
           Welcome to your one-stop destination for all your music needs, where
-          we seamlessly connect you to the world of melodies and rhythms.
+          we seamlessly connect you to the world of melodies and rhythms
         </p>
 
-        <div className="header__cta" data-aos="fade-up">
+        <div className="header-cta" data-aos="fade-up">
           <Button onClick={handleClick}>SEND A MESSAGE</Button>
         </div>
       </div>
