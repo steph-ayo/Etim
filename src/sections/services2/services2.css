@@ -126,6 +126,10 @@
 
 /* MEDIA QUERIES (phone) */
 @media screen and (max-width: 600px) {
+  .services2 {
+    height: 30vh;
+  }
+
   #services > h2 {
     font-size: 20px;
     font-weight: 500;
