@@ -1,5 +1,6 @@
 #services {
   padding: 0rem 5rem;
+  border: 2px solid red;
 }
 
 #services-container {
@@ -138,6 +139,10 @@
 
 /* MEDIA QUERIES (phone) */
 @media screen and (max-width: 600px) {
+  #services {
+    padding: 0rem 1.5rem;
+  }
+
   #services > h2 {
     font-size: 20px;
     font-weight: 500;
@@ -192,10 +197,6 @@
 
 /* MEDIA QUERIES (phone) */
 @media screen and (max-width: 375px) {
-  #services {
-    padding: 1rem 1.5rem;
-  }
-
   #services > h2 {
     font-size: 20px;
   }

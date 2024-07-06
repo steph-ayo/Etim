@@ -1,6 +1,7 @@
 .services2 {
   width: 100%;
   height: 62.4vh;
+  border: 1px solid red;
 }
 
 .card.service {
@@ -127,7 +128,7 @@
 /* MEDIA QUERIES (phone) */
 @media screen and (max-width: 600px) {
   .services2 {
-    height: 30vh;
+    height: 40vh;
   }
 
   #services > h2 {
