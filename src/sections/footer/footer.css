@@ -209,6 +209,13 @@ footer {
 
 /* MEDIA QUERIES (phones) */
 @media screen and (max-width: 375px) {
+  .logo-contact-mail > a,
+  .logo-contact-telephone > a,
+  .logo-contact-whatsapp > a,
+  .logo-contact-instagram > a {
+    padding: 0.4rem 0.4rem 0.2rem 0.4rem;
+  }
+
   .ourServices > h4,
   .concerts > h4,
   .explore-categories > h4,

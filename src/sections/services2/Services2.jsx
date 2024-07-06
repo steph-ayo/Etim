@@ -33,10 +33,10 @@ const Services2 = () => {
         <div className="images">
           <Swiper
             slidesPerView={1}
-            spaceBetween={30}
+            spaceBetween={20}
             breakpoints={{
-              601: { slidesPerView: 2 },
-              1025: { slidesPerView: 3 },
+              601: { slidesPerView: 1 },
+              1025: { slidesPerView: 1 },
             }}
             pagination={{
               clickable: true,

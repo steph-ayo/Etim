@@ -1,12 +1,9 @@
 import logo from "../../assets/images/logo.svg";
 import data from "./data";
 import "./navbar.css";
-// import { IoColorPalette } from "react-icons/io5";
-// import { useModalContext } from "../../context/modal-context";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
-  //   const { showModalHandler } = useModalContext();
-
   return (
     <nav>
       <div className="container nav-container">
@@ -20,9 +17,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        {/* <button id="theme__icon" onClick={showModalHandler}>
-          <IoColorPalette />
-        </button> */}
+        <button id="nav-burger" onClick="#">
+          <RxHamburgerMenu />
+        </button>
       </div>
     </nav>
   );

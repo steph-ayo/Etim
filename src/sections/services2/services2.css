@@ -58,21 +58,19 @@
 .images {
   width: 60%;
   height: 50vh;
-  border-radius: 0 var(--border-radius-1) var(--border-radius-1) -3.5rem;
 }
 
 .mySwiper {
   height: 50vh;
-  border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0;
 }
 
 .musicService-card-bands,
 .musicService-card-ensemble .musicService-card-evachorale,
 .musicService-card-solo {
   width: 100%;
-  background-size: cover; /* This makes the background image cover the entire div */
-  background-position: center; /* This centers the background image */
-  background-repeat: no-repeat; /* This prevents the background image from repeating */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .musicService-card-bands {
@@ -82,7 +80,7 @@
   background-image: url("../../assets/images/concerts/Concerts-essemble.jpg");
 }
 .musicService-card-evachorale {
-  background-image: url("../../assets/images/concerts/evachorale.png");
+  background-image: url("../../assets/images/concerts/evaChorale.jpeg");
 }
 .musicService-card-solo {
   background-image: url("../../assets/images/concerts/Solo.jpeg");
@@ -106,7 +104,7 @@
   width: 3%;
   border-radius: 50%;
   background-color: #0eb2a4;
-  margin: 0.3rem 0;
+  margin: 0.4rem 0;
 }
 
 /* MEDIA QUERIES (tablets) */

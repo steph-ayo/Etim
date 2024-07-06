@@ -76,9 +76,10 @@
   .workshop-container {
     flex-direction: column;
   }
-  .workshop-container .text {
+  .workshop-container > .text {
     width: 100%;
     padding: 4rem 2rem;
+    border-radius: 1rem 1rem 0 0;
   }
 
   .workshop-container .text > h1 {
@@ -89,7 +90,7 @@
     padding: 0.2rem;
   }
 
-  .workshop-container .video {
+  .workshop-container > .video {
     width: 100%;
     border: 15px solid var(--color-primary);
     border-radius: 0 0 1rem 1rem;

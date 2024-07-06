@@ -155,5 +155,6 @@ form > button {
   .whatsapp > a,
   .e-mail > a {
     font-size: 15px;
+    margin-left: 0.3rem;
   }
 }

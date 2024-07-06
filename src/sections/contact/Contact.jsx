@@ -1,8 +1,8 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 import "./contact.css";
 
 const Contact = () => {
@@ -22,33 +22,33 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    console.log("Sending email with the following data:", formData);
+  //   console.log("Sending email with the following data:", formData);
 
-    emailjs
-      .sendForm(
-        "service_1whh84n",
-        "template_3tpt1uo",
-        form.current,
-        "QIRyKOvTaRhxEuaoQ"
-      )
-      .then(
-        (result) => {
-          console.log("SUCCESS!", result.text);
-          alert("Message sent successfully!");
-          // Clear the form after successful submission
-          setFormData({ from_name: "", from_email: "", message: "" });
-        },
-        (error) => {
-          console.error("FAILED...", error);
-          alert(
-            `Failed to send message. Error: ${error.text || error.message}`
-          );
-        }
-      );
-  };
+  //   emailjs
+  //     .sendForm(
+  //       "service_1whh84n",
+  //       "template_3tpt1uo",
+  //       form.current,
+  //       "QIRyKOvTaRhxEuaoQ"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log("SUCCESS!", result.text);
+  //         alert("Message sent successfully!");
+  //         // Clear the form after successful submission
+  //         setFormData({ from_name: "", from_email: "", message: "" });
+  //       },
+  //       (error) => {
+  //         console.error("FAILED...", error);
+  //         alert(
+  //           `Failed to send message. Error: ${error.text || error.message}`
+  //         );
+  //       }
+  //     );
+  // };
 
   return (
     <section id="contact">
@@ -82,7 +82,8 @@ const Contact = () => {
         </div>
 
         <div className="contact-form">
-          <form ref={form} onSubmit={handleSubmit}>
+          {/* <form ref={form} onSubmit={handleSubmit}> */}
+          <form ref={form}>
             <div className="form-group">
               <input
                 type="text"

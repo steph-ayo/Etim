@@ -5,7 +5,10 @@ import "aos/dist/aos.css";
 
 const Whatsnew = () => {
   const handleClick = () => {
-    console.log("Button was clicked!");
+    const message = encodeURIComponent(
+      "Hello Etim Vocal Enterprises, I want to buy..."
+    );
+    window.location.href = `https://wa.me/+2348188207410?text=${message}`;
   };
 
   return (

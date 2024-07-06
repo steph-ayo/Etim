@@ -15,7 +15,7 @@ const data = [
     title: "Trainings & Music workshops",
     desc: "Ignite your passion for music and elevate your skills to new levels",
     btnText: "Beginner → Pro",
-    btnLink: "#Workshop",
+    btnLink: "#workshop",
     image: Image2,
   },
   // {
