@@ -138,7 +138,7 @@ h1 {
 /* MEDIA QUERIES (for tablets) */
 @media screen and (max-width: 1024px) {
   #Catalogue {
-    padding: 0rem 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .products-categories {
@@ -153,6 +153,9 @@ h1 {
 
 /* MEDIA QUERIES (for phones) */
 @media screen and (max-width: 600px) {
+  #Catalogue {
+    padding: 3rem 1.5rem;
+  }
   h2 {
     font-size: 20px;
     font-weight: 500;
@@ -189,6 +192,10 @@ h1 {
 
 /* MEDIA QUERIES (for phones) */
 @media screen and (max-width: 375px) {
+  #Catalogue {
+    padding: 4rem 1.5rem;
+  }
+
   #Catalogue > h2 {
     font-size: 20px;
   }
